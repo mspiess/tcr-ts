@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "bash -c 'jest && git commit -am working || git reset --hard'",
-    "test:light": "bash -c 'jest && git commit -am working || git checkout -- src/kata.js'"
+    "test:light": "bash -c 'jest && git commit -am working || git checkout -- src/kata.ts'"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,20 @@
   },
   "homepage": "https://github.com/marcoemrich/tcr-js#readme",
   "devDependencies": {
-    "jest": "^24.5.0"
+    "@types/jest": "^24.0.18",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(.*|(\\.|/)(test|spec))\\.(j|t)sx?$"
   }
 }

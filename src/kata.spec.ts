@@ -1,4 +1,4 @@
-const double = require('./kata').double
+import {double} from "./kata";
 
 describe('double', () => {
   it('should double a value', () => {

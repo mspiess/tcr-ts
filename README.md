@@ -1,4 +1,4 @@
 # tcr-js
-Quickstart for TCR with JavaScript/Jest
+Quickstart for TCR with TypeScript/Jest
 
 WIP
